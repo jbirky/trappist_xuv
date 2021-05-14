@@ -8,8 +8,8 @@ We re-examine the XUV luminosity evolution of TRAPPIST-1 utilizing new observati
 
 ### Repositories
 
-Updated study: https://github.com/jbirky/trappist_xuv
-Original study: https://github.com/dflemin3/trappist
+* Updated study: https://github.com/jbirky/trappist_xuv
+* Original study: https://github.com/dflemin3/trappist
 
 ### Dependencies
 
@@ -22,5 +22,4 @@ Original study: https://github.com/dflemin3/trappist
 ### Using the posterior samples
 
 To load in the burned-in posterior samples (from Figure 1 from this study) without re-running approxposterior, see:
-
-https://github.com/jbirky/trappist_xuv/mcmc/load_posterior.ipynb
+https://github.com/jbirky/trappist_xuv/mcmc/corner.ipynb

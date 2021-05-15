@@ -13,22 +13,6 @@ __all__ = ["kwargsTRAPPIST1", "LnPriorTRAPPIST1", "samplePriorTRAPPIST1",
 
 # Observational constraints
 
-# Stellar properties: Trappist1 in nearly solar metallicity, so the Baraffe+2015 tracks will be good
-# lumTrappist1 = 0.000522               # Van Grootel et al. (2018) [Lsun]
-# lumTrappist1Sig = 0.000019            # Van Grootel et al. (2018) [Lsun]
-
-# radTrappist1 = 0.121                  # Van Grootel et al. (2018) [Rsun]
-# radTrappist1Sig = 0.003               # Van Grootel et al. (2018) [Rsun]
-
-# logLXUVTrappist1 = -6.4               # Wheatley et al. (2017), Van Grootel et al. (2018)
-# logLXUVTrappist1Sig = 0.05            # Wheatley et al. (2017), Van Grootel et al. (2018)
-
-# LXUVTrappist1 = 3.9e-7                # Wheatley et al. (2017), Van Grootel et al. (2018)
-# LXUVTrappist1Sig = 0.5e-7             # Wheatley et al. (2017), Van Grootel et al. (2018)
-
-# LRatioTrappist1 = 7.5e-4              # Wheatley et al. (2017)
-# LRatioTrappist1Sig = 1.5e-4           # Wheatley et al. (2017)
-
 betaTrappist1 = -1.18                 # Jackson et al. (2012)
 betaTrappist1Sig = 0.31               # Jackson et al. (2012)
 
@@ -100,7 +84,6 @@ def LnFlatPriorTRAPPIST1(x, **kwargs):
         return -np.inf
 
     return 0
-# end function
 
 
 def LnPriorTRAPPIST1(x, **kwargs):
@@ -132,9 +115,6 @@ def LnPriorTRAPPIST1(x, **kwargs):
         return -np.inf
 
     lnprior = 0
-    
-    # Mass prior
-#     lnprior += norm.logpdf(dMass, massTrappist1, massTrappist1Sig)
 
     # Age prior
     lnprior += norm.logpdf(dStopTime, ageTrappist1, ageTrappist1Sig)
@@ -146,7 +126,6 @@ def LnPriorTRAPPIST1(x, **kwargs):
     lnprior += norm.logpdf(dSatXUVFrac, fsatTrappist1, fsatTrappist1Sig)
 
     return lnprior
-# end function
 
 
 def samplePriorTRAPPIST1(size=1, **kwargs):
@@ -172,7 +151,6 @@ def samplePriorTRAPPIST1(size=1, **kwargs):
         return ret
     else:
         return ret[0]
-# end function
 
 
 def sampleFlatPriorTRAPPIST1(size=1, **kwargs):
@@ -197,7 +175,6 @@ def sampleFlatPriorTRAPPIST1(size=1, **kwargs):
         return ret
     else:
         return ret[0]
-# end function
 
 
 # Dict to hold all constraints

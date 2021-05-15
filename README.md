@@ -37,4 +37,4 @@ Usage:
 * To reproduce the MCMC results with approxposterior, see [runAPMCMCTrappist1.py](https://github.com/jbirky/trappist_xuv/blob/main/mcmc/runAPMCMCTrappist1.py)
 * To change the prior or likelihood assumptions for the model fitting, see [trappist1.py](https://github.com/jbirky/trappist_xuv/blob/main/mcmc/trappist1.py)
 * To analyze the the the burned-in posterior samples, (from Figure 1 from this study) without re-running approxposterior, see [corner.ipynb](https://github.com/jbirky/trappist_xuv/blob/main/mcmc/corner.ipynb)
-* To reproduce the integrated flux calculations, see [integratedFlux.ipynb](https://github.com/jbirky/trappist_xuv/blob/main/mcmc/integratedFlux.ipynb)
+* To reproduce the integrated flux calculations, see [integratedFlux.ipynb](https://github.com/jbirky/trappist_xuv/blob/main/flux_calc/integratedFlux.ipynb)

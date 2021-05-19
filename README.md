@@ -6,6 +6,8 @@ We re-examine the XUV luminosity evolution of TRAPPIST-1 utilizing new observati
 
 ## Code
 
+[![DOI](https://zenodo.org/badge/367476597.svg)](https://zenodo.org/badge/latestdoi/367476597)
+
 ### Repositories
 
 * Updated study: https://github.com/jbirky/trappist_xuv
